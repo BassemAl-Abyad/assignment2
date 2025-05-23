@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Data</title>
+  </head>
+  <body>
+    <form>
+      <fieldset style="background-color: #493d9e">
+        <legend style="background-color: #fff2af; font-size: 25px;">Personal Data</legend>
+        <br />
+        <fieldset style="background-color: #b2a5ff">
+          <legend
+            style="
+              background-color: #fff2af;
+              height: 70px;
+              display: flex;
+              align-items: center;
+            "
+          >
+            Your Name
+          </legend>
+          <br />
+          <table>
+            <tr>
+              <td>
+                <label for="first-name">First Name</label>
+              </td>
+              <td>:</td>
+              <td>
+                <input
+                  type="text"
+                  name="fname"
+                  id="first-name"
+                  placeholder="ex. Bassem"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="last-name">Last Name</label>
+              </td>
+              <td>:</td>
+              <td>
+                <input
+                  type="text"
+                  name="lname"
+                  id="last-name"
+                  placeholder="ex. Al-Abyad"
+                />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <br />
+        <br />
+        <table style="color: white">
+          <tr>
+            <td>
+              <label for="tel">Your Phone</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="tel" name="phone" id="tel" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">Email</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="email" name="email" id="email" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password">Password</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="password" name="password" id="password" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="re-password">Re-Password</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="password" name="re-password" id="re-password" />
+            </td>
+          </tr>
+        </table>
+        <br />
+        <br />
+        <div style="color: white">
+          <label>Your Gender:</label>
+          <br />
+          <input type="radio" name="gender" value="male" id="male" />
+          <label for="male">Male</label>
+          <br />
+          <input type="radio" name="gender" value="female" id="female" />
+          <label for="female">Female</label>
+        </div>
+        <br />
+        <br />
+        <div style="color: white">
+          <label>Your Degree:</label>
+          <br />
+          <input type="checkbox" name="status" value="student" id="student" />
+          <label for="student">Student</label>
+          <br />
+          <input type="checkbox" name="status" value="graduated" id="graduated" />
+          <label for="graduated">Graduated</label>
+        </div>
+        <br />
+        <br />
+        <label for="college" style="color: white">Your College:</label>
+        <br />
+        <select name="college" id="college">
+          <optgroup label="International">
+            <option value="AUC">AUC</option>
+            <option value="BUE">BUE</option>
+            <option value="GUC">GUC</option>
+            <option value="CIC">CIC</option>
+          </optgroup>
+          <optgroup label="Local">
+            <option value="FUE">FUE</option>
+            <option value="MIU">MIU</option>
+            <option value="CUE">CUE</option>
+            <option value="ASU">ASU</option>
+          </optgroup>
+          <optgroup label="Disabled">
+            <option value="Other" disabled>Other</option>
+          </optgroup>
+        </select>
+        <br />
+        <br />
+        <input
+          type="image"
+          src="./img/submit.png"
+          alt="Submit"
+          style="width: 85px"
+        />
+      </fieldset>
+    </form>
+  </body>
+</html>
